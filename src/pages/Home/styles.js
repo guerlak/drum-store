@@ -5,15 +5,17 @@ export const ProductsList = styled.ul`
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     list-style: none;
+
     li {
         display: flex;
         flex-direction: column;
         background-color: #fff;
         padding: 20px;
         border-radius: 4px;
+
         img {
             align-self: center;
-            max-width: 200px;
+            height: 200px;
         }
         > strong {
             color: #333;
