@@ -6,6 +6,8 @@ import Routes from './routes';
 import Globalstyle from './styles/global';
 import Header from './components/Header';
 
+// import './config/reactotron';
+
 import store from './store/index';
 
 function App() {
@@ -19,5 +21,4 @@ function App() {
         </Provider>
     );
 }
-
 export default App;

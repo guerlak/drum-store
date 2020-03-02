@@ -12,6 +12,7 @@ export const ProductsList = styled.ul`
         background-color: #fff;
         padding: 20px;
         border-radius: 4px;
+        min-width: 300px;
 
         img {
             align-self: center;
@@ -48,7 +49,7 @@ export const ProductsList = styled.ul`
                 align-items: center;
                 padding: 12px;
                 background-color: rgb(0, 0, 0, 0.1);
-
+                color: #fff;
                 svg {
                     margin-right: 5px;
                 }
