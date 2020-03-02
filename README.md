@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Print](https://storage.cloud.google.com/shaped-storm-144914.appspot.com/drumstore.png)
+![Image Print](https://storage.cloud.google.com/shaped-storm-144914.appspot.com/drumstore.png)
 
 ## Available Scripts
 
