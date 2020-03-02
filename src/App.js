@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import Routes from './routes';
 import Globalstyle from './styles/global';
 import Header from './components/Header';
+import { ToastContainer } from 'react-toastify';
 
 // import './config/reactotron';
 
@@ -17,6 +18,7 @@ function App() {
                 <Header />
                 <Globalstyle></Globalstyle>
                 <Routes></Routes>
+                <ToastContainer />
             </BrowserRouter>
         </Provider>
     );
