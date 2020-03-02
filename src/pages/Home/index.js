@@ -5,7 +5,7 @@ import { ProductsList } from './styles';
 import { MdShoppingCart } from 'react-icons/md';
 import api from '../../services/api';
 import { formatPrice } from '../../util/format';
-import * as CartActions from '../Cart/actions';
+import * as CartActions from '../../store/modules/cart/actions';
 
 class Home extends Component {
     state = {
@@ -24,15 +24,14 @@ class Home extends Component {
         this.setState({ products: data });
     }
 
-    handleAddProduct = product => {
-        const { addItem } = this.props;
-        addItem(product);
+    handleAddProduct = id => {
+        const { addItemRequest } = this.props;
+        addItemRequest(id);
     };
 
     render() {
         const { products } = this.state;
         const { amount } = this.props;
-
         return (
             <ProductsList>
                 {products.map(prod => (
@@ -42,7 +41,7 @@ class Home extends Component {
                         <span>{prod.priceFormated}</span>
                         <button
                             type="button"
-                            onClick={() => this.handleAddProduct(prod)}
+                            onClick={() => this.handleAddProduct(prod.id)}
                         >
                             <div>
                                 <MdShoppingCart

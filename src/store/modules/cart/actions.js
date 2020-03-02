@@ -1,7 +1,13 @@
-export const addItem = product => ({
-    type: '@cart/ADD_ITEM',
+export const addItemRequest = id => ({
+    type: '@cart/ADD_ITEM_REQUEST',
+    id
+});
+
+export const addItemSucess = product => ({
+    type: '@cart/ADD_ITEM_SUCESS',
     product
 });
+
 export const removeItem = id => ({
     type: '@cart/REMOVE_ITEM',
     id
