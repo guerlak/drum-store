@@ -1,6 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#E-commerce store Sample
 
 ![Image Print](https://storage.googleapis.com/shaped-storm-144914.appspot.com/drumstore.png)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
